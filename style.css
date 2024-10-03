@@ -37,9 +37,10 @@ a{
     color: rgb(238, 226, 90);
     transition-duration: 0.3s;   
 }
-a:hover{
+nav ul li a:hover{
     color: white;
     background-color: rgb(74, 131, 64);
+    text-transform: uppercase;
 }
 
 
@@ -53,7 +54,7 @@ a:hover{
 
 a {
     color: white;
-    text-transform: uppercase;
+   
     text-decoration: none;
   }
   
