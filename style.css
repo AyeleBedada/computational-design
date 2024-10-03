@@ -4,16 +4,21 @@ body{
     background-color: rgb(57, 130, 59);
     text-align: center;
 }
+/*
 .instruction{
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 14px;
+    background-color: #d1e5ff;
 }
+*/
 
 .container{
    display: flex;
   /* flex-wrap: wrap; */
    width: 100%;
+
+
    
 }
 
@@ -34,8 +39,9 @@ nav ul li a {
 
 a{
     text-decoration: none;
-    color: rgb(238, 226, 90);
-    transition-duration: 0.3s;   
+    transition-duration: 0.3s;  
+    color: white;
+    text-decoration: none; 
 }
 nav ul li a:hover{
     color: white;
@@ -49,15 +55,14 @@ nav ul li a:hover{
     background-color: rgb(57, 130, 59);
     width: 80%;
     text-align: left;
+
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /*background-color: #d1e5ff;*/
     
 }
 
-a {
-    color: white;
-   
-    text-decoration: none;
-  }
-  
 .myButton{
 
     background-color: rgba(51, 93, 51, 0.6);
@@ -66,13 +71,13 @@ a {
     text-align: center;
     text-decoration: none;
     transition-duration: 0.4s;
-    font-size: 10px;
+    font-size: 14px;
     width: 100px;
     height:50px;
     border-radius: 3%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin: 3px;
+    margin: 1px;
     
   }
   
