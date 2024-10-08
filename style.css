@@ -6,6 +6,11 @@ body{
     text-align: center;
     font-family: Roboto, Arial, sans-serif;
 }
+.home{
+    align-items: center;
+    align-content: center;
+    
+}
 .left{
    text-align: left;
 }
