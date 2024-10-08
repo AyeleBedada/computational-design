@@ -104,6 +104,8 @@ header h1{
 .item .sub-menu{
     background: #3c803a;
     display: none;
+    text-align: left;
+    padding-left: 3%;
 }
 .menu-btn{
    position: absolute;
