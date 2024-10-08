@@ -21,6 +21,17 @@ body{
     padding-left: 20%;
     padding-right: 5%;
 }
+
+
+#instruction{
+    text-align: left;
+    
+    padding-top: 2%;
+    padding-left: 20%;
+    padding-right: 5%;
+}
+
+
 a{
     text-decoration: none;
     transition-duration: 0.3s;  
@@ -37,8 +48,6 @@ a{
     background: linear-gradient(#087421, #118d4f);
     border-radius: 10px;
 }
-
-
 
 .objective0{
     background-color: #5cb689;
