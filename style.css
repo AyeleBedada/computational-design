@@ -1,41 +1,15 @@
 
 body{
     min-height: 100vh;
-    padding: 2% 2%;
+    padding: 1% 1%;
     background-color: rgb(57, 130, 59);
     text-align: center;
+    font-family: Roboto, Arial, sans-serif;
 }
-/*
-.instruction{
+
+.intsruction{
     text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    background-color: #d1e5ff;
-}
-*/
-
-.container{
-   display: flex;
-  /* flex-wrap: wrap; */
-   width: 100%;
-
-
-   
-}
-
-nav1{
-    width: 20%;
-    text-align: left;
-}
-
-nav ul li {
-list-style: none;
-/* display: inline-block; */
-padding: 20px;
-}
-nav ul li a {
-    color: rgb(67, 145, 229);
-    font-style: italic;
+    padding: 2% 20%;
 }
 
 a{
@@ -44,48 +18,7 @@ a{
     color: white;
     text-decoration: none; 
 }
-nav ul li a:hover{
-    color: white;
-    background-color: rgb(74, 131, 64);
-    text-transform: uppercase;
-}
 
-
-.assessmentForm{
-    background-color: rgb(57, 130, 59);
-    width: 80%;
-    text-align: left;
-
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    /*background-color: #d1e5ff;*/
-    
-}
-
-.myButton{
-
-    background-color: rgba(51, 93, 51, 0.6);
-    color: rgb(51, 170, 148);
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    transition-duration: 0.4s;
-    font-size: 14px;
-    width: 100px;
-    height:50px;
-    border-radius: 3%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin: 1px;
-    
-  }
-  
-.myButton:hover{
-  background-color: rgb(8, 125, 88);
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-  color: red;
-  }
 
 ::-webkit-scrollbar{
     width:15px;
@@ -101,28 +34,27 @@ nav ul li a:hover{
 }
 
 .side-bar{
-    background: #1b1a1b;
+    background: #355530;
     width: 250px;
+    left: -250px;
     height: 100vh;
     position: fixed;
     top: 0;
-    overflow-y: fixed;
+    overflow-y: auto;
     transition: 0.6s ease;
     transition-property: left;
-
 }
 header{
-    background: #33363a;
+    background: #538a4e;
 }
-
 header img{
     width: 100px;
     margin: 15px;
-    margin-left: 70px;
+    margin-left: 10px;
+    margin-top: 30px;
     /* border-radius: 50%; */
-    border: 3px solid #b4b8b9;
+   /* border: 3px solid #b4b8b9;*/
 }
-
 .close-btn{
     position: absolute;
     color: #fff;
@@ -142,7 +74,7 @@ header h1{
 
 .menu{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 3px;
 }
 
 .menu .item {
@@ -154,15 +86,50 @@ header h1{
   color:  #fff;
    font-size: 16px;
    display: block;
-   padding: 5px 30px;
-   line-height: 60px;
+   padding: 3px 3px;
+   /* height of side bar*/
+   line-height: 50px;
 }
-
+ 
 .item i{
     margin-right: 15px;
 }
 
+.item a .dropdown{
+ position: absolute;
+ right:0;
+ margin:20px;
+ transition:0.3s ease;
+}
 
+.item .sub-menu{
+    background: #3c803a;
+    display: none;
+}
+
+.menu-btn{
+   position: absolute;
+   color: black;
+   font-size: 35px;
+   cursor: pointer;
+   margin: 25px;
+}
+
+.side-bar.active{
+   left:0; 
+}
+
+.side-bar::-webkit-scrollbar{
+    width: opx;
+}
+ 
+.item .sub-menu a{
+    padding-left: 2px;
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
     
 
 

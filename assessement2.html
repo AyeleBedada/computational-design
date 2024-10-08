@@ -22,18 +22,57 @@
 -->
 
 
-    <div class="container">
-        <div class="nav1">
-            <nav>
-                <ul>
-                    <li><button class="myButton"><a href="index.html">HOME</a></button></li>
-                    <li><button class="myButton"><a href="assessement1.html">Pre-course Assessment-1</a></button></li>
-                    <li><button class="myButton"><a href="assessement2.html">Pre-course Assessment-2</a></button></li>
-                
-                  </ul>
-            </nav>
-        </div>
 
+<!-- --------------------------------  SIDEBAR -------------------------------------------------------------------------   -->
+
+<!--menu button-->
+<div class="menu-btn">
+    <i class="fas fa-bars"></i>
+ </div>
+<div class="side-bar">
+        <!--Header Section-->
+    <header>
+         <!--Close Button-->
+        <div class="close-btn">
+    <i class="fas fa-times"></i>
+        </div>
+        <!--Logo image-->
+        <img src="Chair_location.jpg" alt="Ethioplugin Particles Parametric Models">
+        <!--Text Logo-->
+        <h1>Computational Design</h1>
+    </header> 
+
+        <!--  Menu item -->
+        <!-- (.item>a>i.fas)*5  -->
+    <div class="menu">
+        <div class="item"><a href="index.html"><i class="fas fa"></i>HOME</a></div>
+        <div class="item"><a class="sub-btn"><i class="fas fa"></i>Unit 00
+            <!-- dropdown and 
+             arrow 01-->
+        <i class="fas fa-angle-right dropdown"></i>
+        </a>
+    <div class="sub-menu">
+        <!--  (a.sub-item)* -->
+         <a href="assessment0.html" class="sub-item">Pre-course Assessment</a>
+         <a href="assessement1.html" class="sub-item">Pre-course Assessment-1</a>
+         <a href="assessement2.html" class="sub-item">Pre-course Assessment-2</a>
+        </div>
+    </div>
+    
+
+    </div>
+    
+    </div>
+
+ 
+
+<!-- -------------------------------  SIDEBAR   ----------------------------------------------------------------------------  -->
+
+
+
+
+    <div class="container">
+ 
         <div class="assessmentForm">
             <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSfuxdH5l6on9yFw-TWjZiZBysKuv-vUFChW7Co0QUYE-kElDw/viewform?embedded=true"
@@ -41,6 +80,33 @@
         </div>
 
     </div>
+
+
+
+
+<!-- Jquery con link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    //jquery for expand and collapse the sidebar
+   $('.menu-btn').click(function(){
+      $('.side-bar').addClass('active');
+      $('.menu-btn').css("visibility", "hidden");
+   });
+     // for close button
+     $('.close-btn').click(function(){
+        $('.side-bar').removeClass('active');
+        $('.menu-btn').css("visibility", "visible")
+     });
+   //jquery for toggle sub menus 
+       $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+       });
+  })
+</script>
+
 
 </body>
 
