@@ -11,7 +11,7 @@ body{
     align-content: center;
     
 }
-.left{
+left{
    text-align: left;
 }
 .instruction{
@@ -21,7 +21,6 @@ body{
     padding-left: 20%;
     padding-right: 5%;
 }
-
 
 #instruction{
     text-align: left;
@@ -152,11 +151,14 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
+        /* check */
+    width: 100%;
 }
 
 .draggable .btnCd{
     height: 150px;
-    width: 150px;
+      /* check width: 150px;*/
+      width: 22%px;
     margin: 10px;
     /*border: solid 2px black;*/
     cursor: pointer;
@@ -166,18 +168,22 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* check */
+    width: 100%;
 }
 
 .after-drop{
     height: 150px;
-    width: 150px;
+     /* check width: 150px;*/
+    width: 22%px;
     margin: 10px;
     text-align: center;
     line-height: 20px;
 }
 .drop-target{
     height: 150px;
-    width: 150px;
+     /* check width: 150px;*/
+     width: 22%px;
     /*border: 2px dashed black;*/
     border: 2px solid rgb(21, 87, 6);
     margin: 10px;
