@@ -6,33 +6,29 @@ body{
     text-align: center;
     font-family: Roboto, Arial, sans-serif;
 }
-
-.intsruction{
+.left{
+   text-align: left;
+}
+.instruction{
     text-align: left;
     padding: 2% 20%;
 }
-
 a{
     text-decoration: none;
     transition-duration: 0.3s;  
     color: white;
     text-decoration: none; 
 }
-
-
 ::-webkit-scrollbar{
     width:15px;
 }
-
 ::-webkit-scrollbar-track{
     background: #d1e5ff;
 }
-
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(#087421, #118d4f);
     border-radius: 10px;
 }
-
 .side-bar{
     background: #355530;
     width: 250px;
@@ -71,17 +67,14 @@ header h1{
    font-family: sans-serif;
    letter-spacing: 2px;
 }
-
 .menu{
     width: 100%;
     margin-top: 3px;
 }
-
 .menu .item {
    position: relative;
    cursor: pointer; 
 }
-
 .menu .item a{
   color:  #fff;
    font-size: 16px;
@@ -90,23 +83,20 @@ header h1{
    /* height of side bar*/
    line-height: 50px;
 }
- 
+
 .item i{
     margin-right: 15px;
 }
-
 .item a .dropdown{
  position: absolute;
  right:0;
  margin:20px;
  transition:0.3s ease;
 }
-
 .item .sub-menu{
     background: #3c803a;
     display: none;
 }
-
 .menu-btn{
    position: absolute;
    color: black;
@@ -114,19 +104,15 @@ header h1{
    cursor: pointer;
    margin: 25px;
 }
-
 .side-bar.active{
    left:0; 
 }
-
 .side-bar::-webkit-scrollbar{
     width: opx;
 }
- 
 .item .sub-menu a{
     padding-left: 2px;
 }
-
 .rotate{
     transform: rotate(90deg);
 }

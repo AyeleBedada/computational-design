@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPUTATIONAL DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Icon Style-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+</head>
+
+<body>
+
+<!-- --------------------------------  SIDEBAR -------------------------------------------------------------------------   -->
+
+<!--menu button-->
+ <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+ </div>
+<div class="side-bar">
+        <!--Header Section-->
+    <header>
+         <!--Close Button-->
+        <div class="close-btn">
+    <i class="fas fa-times"></i>
+        </div>
+        <!--Logo image-->
+        <img src="Chair_location.jpg" alt="Location of chair">
+        <!--Text Logo-->
+        <h1>Computational Design</h1>
+    </header> 
+
+        <!--  Menu item -->
+        <!-- (.item>a>i.fas)*5  -->
+    <div class="menu">
+        <div class="item"><a href="index.html"><i class="fas fa"></i>HOME</a></div>
+        <div class="item"><a class="sub-btn"><i class="fas fa"></i>Unit 00
+            <!-- dropdown and 
+             arrow 01-->
+        <i class="fas fa-angle-right dropdown"></i>
+        </a>
+    <div class="sub-menu">
+        <!--  (a.sub-item)* -->
+         <a href="interface_tutorial.html" class="sub-item">How to use the site</a>
+         <a href="assessment0.html" class="sub-item">Pre-course Assessment</a>
+         <a href="assessement1.html" class="sub-item">Pre-course Assessment-1</a>
+         <a href="assessement2.html" class="sub-item">Pre-course Assessment-2</a>
+        </div>
+    </div>
+    
+    </div>
+    
+    </div>
+
+<!-- -------------------------------  SIDEBAR   ----------------------------------------------------------------------------  -->
+
+
+<h1>Computational Design in Architecture [ARCH 4061]</h1>
+<h3>Site Navigation Tutorial</h3>
+
+<p>Welcome to the course,Computational Design in Architecture [ARCH 4061].</p>
+
+<p>This page is prepared as an explanation on how to navigate the site: </p>
+
+<h4 class="instruction">Interface illustration for mobile phone browsers:</h4>
+
+    <img src="mobile inteface.jpg" alt="Site interface illustration for mobile phone browsers."  width="60%" >
+
+<h4 class="instruction">Interface illustration for desktop/ laptop browsers:</h4>
+
+    <img src="desktop interface.jpg" alt="Site interface illustration for desktop browsers."  width="60%" >
+
+
+
+<!-- Jquery con link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    //jquery for expand and collapse the sidebar
+   $('.menu-btn').click(function(){
+      $('.side-bar').addClass('active');
+      $('.menu-btn').css("visibility", "hidden");
+   });
+     // for close button
+     $('.close-btn').click(function(){
+        $('.side-bar').removeClass('active');
+        $('.menu-btn').css("visibility", "visible")
+     });
+   //jquery for toggle sub menus 
+       $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+       });
+  })
+</script>
+
+
+
+</body>
+
+</html>
