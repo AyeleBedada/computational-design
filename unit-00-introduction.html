@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPUTATIONAL DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Icon Style-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+</head>
+
+<body>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <h1>Computational Design in Architecture [ARCH 4061]</h1>
+
+    <!-- --------------------------------  SIDEBAR -------------------------------------------------------------------------   -->
+    
+    <!--menu button-->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+     </div>
+    <div class="side-bar">
+            <!--Header Section-->
+        <header>
+             <!--Close Button-->
+            <div class="close-btn">
+        <i class="fas fa-times"></i>
+            </div>
+            <!--Logo image-->
+            <img src="Chair_location.jpg" alt="Location of chair">
+            <!--Text Logo-->
+            <h1>Computational Design</h1>
+        </header> 
+            <!--  Menu item -->
+            <!-- (.item>a>i.fas)*5  -->
+        <div class="menu">
+            <div class="item"><a href="index.html"><i class="fas fa"></i>HOME</a></div>
+            <div class="item"><a class="sub-btn"><i class="fas fa"></i>Unit 00
+                <!-- dropdown and 
+                 arrow 01-->
+            <i class="fas fa-angle-right dropdown"></i>
+            </a>
+            <div class="sub-menu">
+                <!--  (a.sub-item)* -->
+                <a href="unit-00-introduction.html" class="sub-item">0.0, Unit Introduction</a>
+                <a href="interface_tutorial.html" class="sub-item">0.1, Navigation Tutorial</a>
+                <a href="assessment0.html" class="sub-item">0.2, Assessment-Instruction</a>
+                <a href="assessement1.html" class="sub-item">0.3, Pre-course Assessment-1</a>
+                <a href="assessement2.html" class="sub-item">0.4, Pre-course Assessment-2</a>
+                <a href="00-quiz.html" class="sub-item">0.5, Interactive Unit Summery</a>
+            </div>
+            </div>
+        </div>
+        
+        </div>
+    
+    <!-- -------------------------------  SIDEBAR   ----------------------------------------------------------------------------  -->
+    
+    <h2 class="instruction">Unit 0.0, Unit Introduction: Site Interface and Pre-course Assessment</h2>
+    
+     
+        <p class="instruction">'Unit 00' the course, Computational Design in Architecture [ARCH 4061], documentation is dedicated to interface/ site
+            navigation tutorial and pre-course assessment. Navigate to 'unit 00' by making use of the sidebar to explore the contents and 
+            complete all tasks included according to instructions indicated. </p>
+
+<div class="objective0" >
+    <h3 class="instruction">Learning Objectives</h3>
+    <p class="instruction">
+        
+         <em> Course Learning Objectives</em> <br><br>
+
+        Course Objective 1: Experience and interpret Computational Design in Design and Architecture from Academic and industry point of view <br>
+        Course Objective 2: Design graphical and architectural projects based on computational Design principles <br>
+        Course Objective 3: Construct a project to experience the advantages of computational design in construction  <br><br>
+
+        In this units, students will:
+        <br><br><br>
+        <!--  
+                Describe key components of online student success in regional and specific context (CO1 & CO2)
+        Describe some of the design and delivery techniques of effective instructional content (CO1 & CO2)
+        Prepare content for optimizing instructor presence in an online course (CO1 & CO2)
+        Create a plan for implementing Master Class resources in an online course (CO1 & CO2)
+        Demonstrate proficient Open edX LMS navigation from a student perspective (CO1)
+        -->
+    
+    </p>
+</div>
+      
+
+<!-- Jquery con link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    //jquery for expand and collapse the sidebar
+   $('.menu-btn').click(function(){
+      $('.side-bar').addClass('active');
+      $('.menu-btn').css("visibility", "hidden");
+   });
+     // for close button
+     $('.close-btn').click(function(){
+        $('.side-bar').removeClass('active');
+        $('.menu-btn').css("visibility", "visible")
+     });
+   //jquery for toggle sub menus 
+       $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+       });
+  })
+</script>
+
+</body>
+
+</html>
