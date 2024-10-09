@@ -39,8 +39,9 @@ a{
 }
 
 
+
 .objective0{
-    background-color: #118d4f;
+    background-color: #30ac63;
 }
 .side-bar{
     background: #355530;
@@ -61,8 +62,7 @@ header img{
     margin: 15px;
     margin-left: 10px;
     margin-top: 30px;
-    /* border-radius: 50%; */
-   /* border: 3px solid #b4b8b9;*/
+
 }
 .close-btn{
     position: absolute;
@@ -142,7 +142,6 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 .draggable .btnCd{
@@ -157,7 +156,6 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 .after-drop{
@@ -182,7 +180,6 @@ header h1{
 }
 .wrong{
     background-color: #e16557;
-
 }
     
 
