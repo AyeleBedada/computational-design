@@ -142,6 +142,7 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .draggable .btnCd{
@@ -156,6 +157,7 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .after-drop{
