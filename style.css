@@ -150,7 +150,8 @@ header h1{
     margin: 10px;
     /*border: solid 2px black;*/
     cursor: pointer;
-    background-color: #25b900;
+    background-color: #124a04;
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .drop-container{
