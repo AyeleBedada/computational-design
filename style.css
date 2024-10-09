@@ -144,12 +144,13 @@ header h1{
     justify-content: center;
 }
 
-.draggable .btnCd{
+.draggable {
     height: 150px;
     width: 150px;
     margin: 10px;
     /*border: solid 2px black;*/
     cursor: pointer;
+    background-color: #25b900;
 }
 
 .drop-container{
