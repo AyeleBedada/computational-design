@@ -29,6 +29,7 @@ dropTargets.forEach(dropTarget=>{
         draggableDiv.removeChild(draggableDiv.childNodes[1]);
         draggableDiv.classList.add('after-drop');
         
+        
         draggableDiv.setAttribute('draggable', false);
         e.target.setAttribute('draggable', false);
 
