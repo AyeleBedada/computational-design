@@ -3,6 +3,7 @@ const draggables=document.querySelectorAll('.draggable');
 const dropTargets=document.querySelectorAll('.drop-target');
 var draggableDiv;
 
+
 draggables.forEach(draggable => {
     draggable.addEventListener('dragstart', e=> {
         e.dataTransfer.setData('text/plain', draggable.getAttribute('data-correct'));
@@ -15,6 +16,7 @@ draggables.forEach(draggable => {
 dropTargets.forEach(dropTarget=>{
     dropTarget.addEventListener('dragover', e=>{
         e.preventDefault();
+      
         //console.log('item dragged over'); 
     } )
 
@@ -34,10 +36,12 @@ dropTargets.forEach(dropTarget=>{
         e.target.setAttribute('draggable', false);
 
         if(correctAnswer===dropTargetAnswer){
-            dropTarget.classList.add('correct'); 
+           
+            dropTarget.classList.add('correct');
         }
         else{
             dropTarget.classList.add('wrong');
         }
+
     })
 })
