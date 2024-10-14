@@ -85,6 +85,7 @@ instructions for updates!</p>
             <div class="sub-menu">
             <!--  (a.sub-item)* -->
              <a href="1-1_brainstorming.html" class="sub-item">1.1, Brainstorming</a>
+             <a href="quiz-01.html" class="sub-item">1.x, Unit interactive summary</a>
             </div>
             </div>
 
@@ -154,25 +155,7 @@ instructions for updates!</p>
 <!-- JS link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<script>
-  $(document).ready(function(){
-    //jquery for expand and collapse the sidebar
-   $('.menu-btn').click(function(){
-      $('.side-bar').addClass('active');
-      $('.menu-btn').css("visibility", "hidden");
-   });
-     // for close button
-     $('.close-btn').click(function(){
-        $('.side-bar').removeClass('active');
-        $('.menu-btn').css("visibility", "visible")
-     });
-   //jquery for toggle sub menus 
-       $('.sub-btn').click(function(){
-        $(this).next('.sub-menu').slideToggle();
-        $(this).find('.dropdown').toggleClass('rotate');
-       });
-  })
-</script>
+<script src="menu.js" ></script>
 
 </body>
 

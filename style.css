@@ -122,7 +122,7 @@ header h1{
 .menu-btn{
    position: absolute;
    color: black;
-   font-size: 35px;
+   font-size: 40px;
    cursor: pointer;
    margin: 25px;
 }
@@ -186,8 +186,6 @@ header h1{
     line-height: 20px;
 }
 
-
-
 .subset{
     font-size: 30px;
     font-weight: bold;
@@ -195,6 +193,7 @@ header h1{
 
 .correct{
     background-color: #30ac63;
+  
 }
 .wrong{
     background-color: #e16557;
@@ -226,7 +225,83 @@ header h1{
 #myButtonFloat{
     text-align: right;
 }
-    
+
+/* -----------------------------------------  quiz 1.x ----------------------------  */
+
+#dragScriptContainer{	/* BIG DIV containing HTML needed for the entire script */
+    width:100%;
+    margin:0 auto;
+    height:400px;
+    margin-top:20px;
+    padding:3px;
+
+}
+#questionDiv{ /* Big div for all the questions */
+    float:left;
+    height:100%;
+    width:60%;
+   /* border:1px solid #000; */
+    padding:2px;
+    display: block;
+
+}
+#answerDiv{	/* Big div for all the answers */
+    float:right;
+    height:100%;
+    width:30%;
+    padding:2px;
+}
+#questionDiv div,#answerDiv div,#dragContent div{	/* General rules for small divs - i.e. specific questions and answers */
+    width:45%;
+    height:100px;
+    line-height:20px;		
+    float:left;
+    margin-right:2px;
+    margin-bottom:2px;
+    text-align:center;
+    background-color: white; 
+    border-radius: 30px;
+    align-items: center;
+    align-content: center;
+    padding: 2px;
+}
+#dragContent div{	/* Drag content div - i.e. specific answers when they are beeing dragged */
+     border:1px solid #000; 
+}
+#answerDiv .dragDropSmallBox{	/* Small answer divs */
+    border:1px solid #000;
+    cursor:pointer;
+    width: 100%;
+}
+#questionDiv .dragDropSmallBox{	/* Small answer divs */
+    border:1px solid #000;
+    cursor:pointer;
+}
+#questionDiv div div{	/* DIV after it has been dragged from right to left box */
+    margin:0px;
+    border:0px;
+    padding:0px;
+    width:100%;
+}
+#questionDiv .destinationBox{ /* Small empty boxes for the questions - i.e. where answers could be dragged */
+    border:0px;
+  background-color: rgba(255, 255, 255, 0); 
+    width:45%;
+    border:1px dashed #000; 
+}
+#questionDiv .correctAnswer{	/* CSS indicating correct answer */
+    background-color:rgb(26, 95, 26);
+    color:#fff;
+}
+#questionDiv .wrongAnswer{	/* CSS indicating wrong answer */
+    background-color:rgb(183, 74, 74);
+    color:#fff;
+}
+
+#dragContent{
+    position:absolute;
+    display:none;
+}	
 
 
 

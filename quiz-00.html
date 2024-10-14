@@ -66,6 +66,7 @@
                 <div class="sub-menu">
                 <!--  (a.sub-item)* -->
                  <a href="1-1_brainstorming.html" class="sub-item">1.1, Brainstorming</a>
+                 <a href="quiz-01.html" class="sub-item">1.x, Unit interactive summary</a>
                 </div>
                 </div>
     
@@ -133,7 +134,7 @@
     <!-- ---------------------------------Question 1------------------------------------------  -->
      
     <p class="instruction" style="color: white;"> 1, On the interactive figure below drag and drop items from the first row to 
-        the second row by matching them correctly. If the box in the second raw turns green, you are correct while. 
+        the second row by matching them correctly. If the box in the second raw turns green, you are correct. 
         If turns to red, you are incorrect. </p>
 
 <div class="instruction"> 
@@ -191,6 +192,7 @@
     first row to the second row in their logically correct places. If the box in the second raw turns green, you are correct. But 
     if it turns to red, you are incorrect. </p>
 
+
     <div class="instruction"> 
 
         <div class="question">
@@ -227,7 +229,7 @@
                <p class="subset">&#8838;</p> 
 
                 <div class="drop-target" data-correct="Generative Design">
-                <!--Applies algorithms to parameters to generate hundreds or thousands of possible design variations to review and choose from.-->
+                
                <p id="answer"> </p>
                 </div>
 
@@ -249,6 +251,10 @@
     
     </div>
 
+<!--Applies algorithms to parameters to generate hundreds or thousands of possible design variations to review and choose from.-->
+
+
+
     <!-- ---------------------------------Question 3------------------------------------------  -->
 
     <p class="instruction" style="color: white;"> 3, Sort........ </p>
@@ -258,25 +264,7 @@
 <!-- Jquery con link 1 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<script>
-  $(document).ready(function(){
-    //jquery for expand and collapse the sidebar
-   $('.menu-btn').click(function(){
-      $('.side-bar').addClass('active');
-      $('.menu-btn').css("visibility", "hidden");
-   });
-     // for close button
-     $('.close-btn').click(function(){
-        $('.side-bar').removeClass('active');
-        $('.menu-btn').css("visibility", "visible")
-     });
-   //jquery for toggle sub menus 
-       $('.sub-btn').click(function(){
-        $(this).next('.sub-menu').slideToggle();
-        $(this).find('.dropdown').toggleClass('rotate');
-       });
-  })
-</script>
+<script src="menu.js" ></script>
 
 <!-- Jquery con link 2 -->
 

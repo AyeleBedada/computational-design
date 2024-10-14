@@ -67,6 +67,7 @@
                 <div class="sub-menu">
                 <!--  (a.sub-item)* -->
                  <a href="1-1_brainstorming.html" class="sub-item">1.1, Brainstorming</a>
+                 <a href="quiz-01.html" class="sub-item">1.x, Unit interactive summary</a>
                 </div>
                 </div>
     
@@ -132,12 +133,12 @@
 
     <h2 class="instruction">0.2, Course Syllabus</h2>
 
-        <p class="instruction">You can view the <a href="https://drive.google.com/file/d/1-E_ndW0GYu3yOvMc5jaHNe9D1BBUDpWz/view?usp=drive_link" target="_blank">Course Syllabus</a> below. 
+        <p class="instruction">You can view the <a href="https://drive.google.com/file/d/1g_pQjD_0xN1sTmFpoqwWzKlpC-ALjjWW/view?usp=drive_link" target="_blank">Course Syllabus</a> below. 
             You can only view this file if you are signed in on your browser with the email you registered for this course.</p>
 
       <div  class="instruction">
 
-        <iframe src="https://drive.google.com/file/d/1-E_ndW0GYu3yOvMc5jaHNe9D1BBUDpWz/preview" 
+        <iframe src="https://drive.google.com/file/d/1g_pQjD_0xN1sTmFpoqwWzKlpC-ALjjWW/preview" 
         width="100%" height="600" allow="autoplay"></iframe>
 
       </div>
@@ -145,25 +146,7 @@
 <!-- Jquery con link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<script>
-  $(document).ready(function(){
-    //jquery for expand and collapse the sidebar
-   $('.menu-btn').click(function(){
-      $('.side-bar').addClass('active');
-      $('.menu-btn').css("visibility", "hidden");
-   });
-     // for close button
-     $('.close-btn').click(function(){
-        $('.side-bar').removeClass('active');
-        $('.menu-btn').css("visibility", "visible")
-     });
-   //jquery for toggle sub menus 
-       $('.sub-btn').click(function(){
-        $(this).next('.sub-menu').slideToggle();
-        $(this).find('.dropdown').toggleClass('rotate');
-       });
-  })
-</script>
+<script src="menu.js" ></script>
 
 </body>
 

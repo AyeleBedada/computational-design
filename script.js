@@ -1,4 +1,4 @@
-
+// question 1
 const draggables=document.querySelectorAll('.draggable');
 const dropTargets=document.querySelectorAll('.drop-target');
 var draggableDiv;
@@ -45,3 +45,6 @@ dropTargets.forEach(dropTarget=>{
 
     })
 })
+
+
+
