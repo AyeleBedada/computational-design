@@ -12,8 +12,8 @@
 
 <body>
 
-    <h1>Computational Design in Architecture [ARCH 4061]
-
+    <h1>Computational Design in Architecture [ARCH 4061]</h1>  <br><br><br>
+ 
     <!-- --------------------------------  SIDEBAR -------------------------------------------------------------------------   -->
     
     <!--menu button-->
@@ -127,53 +127,72 @@
     
     <!-- -------------------------------  SIDEBAR   ----------------------------------------------------------------------------  -->
     
-    <!-- ---------------------------------Question 1------------------------------------------  -->
-    <h2 class="instruction">1.1, Interactive Unit Summery</h2>  
+    <h2 class="instruction">1.x, Interactive Unit Summery</h2>  
     <p class="instruction">This page is prepared to help students summarize the unit under consideration </p>
 
 
-    <p class="instruction">This page is prepared to help students summarize the unit under consideration </p>
-    <p class="instruction" style="color: white;"> 1, On the interactive figure below drag and drop items from the right column to the white box in front of the 
-        the left column by matching them correctly. If the box in the first column turns green, you are correct. 
-        If turns to red, you are incorrect. </p>
+    
+    <p class="instruction" style="color: white;"> 1, On the interactive figure below drag and drop items from the top raw to the bottom raw
+        by matching them correctly. If the box in the first raw turns green, you are correct. 
+        If it turns to red, you are incorrect. </p>
 
 <div class="instruction"> 
-    <div id="dragScriptContainer">
-        <div id="questionDiv">
-            <div class="dragDropSmallBox" id="q1">Geometric constraints</div>
-            <div class="destinationBox"></div>
-            <div class="dragDropSmallBox" id="q2">Dimensional constraints</div>
-            <div class="destinationBox"></div>
-            <div class="dragDropSmallBox" id="q3">Expressions</div>
-            <div class="destinationBox"></div>
-          
-        </div>
+
+    <div class="question">
         
-        <div id="answerDiv">
-            <div class="dragDropSmallBox" id="a1">
-                Constrains elements with relationships of: horizontal, vertical, parallel, perpendicular or at
-                angle, coincident, collinear, concentric, symmetrical, equal, tangent and smooth, etc.
+        <div class="drag-container">
+
+            <div class="draggable" draggable="true" data-correct="Geometric constraints">  
+               <p>Geometric constraint</p>
             </div>
-            <div class="dragDropSmallBox" id="a2">
+
+            <div class="draggable" draggable="true" data-correct="Dimensional constraints">  
+                <p>Dimensional constraints</p>
+             </div>
+
+             <div class="draggable" draggable="true" data-correct="Expressions">  
+               <p>Expressions</p> 
+             </div>
+
+        </div>
+    </div>
+
+    <div class="question">
+
+        <div class="drop-container"> 
+         
+            <div class="drop-target" data-correct="Dimensional constraints">
+            <!--Applies algorithms to parameters to generate hundreds or thousands of possible design variations to review and choose from.-->
                 Constrains elements with values diameters, radius, angles,length, width, height, and other parameters.
             </div>
-            <div class="dragDropSmallBox" id="a3">
-                A formula that describes and manipulates the parametric relationship between elements.</div>
+            <div class="drop-target" data-correct="Expressions">
+                A formula that describes and manipulates the parametric relationship between elements.
+            </div>
+
+            <div class="drop-target" data-correct="Geometric constraints">
+                Constrains elements with relationships of: horizontal, vertical, parallel, perpendicular or at
+                angle, coincident, collinear, concentric, symmetrical, equal, tangent and smooth, etc.n.
+            </div>
+            
         </div>
-        <div id="dragContent"></div>
-        <div>
-<input type="button" onclick="dragDropResetForm();return false" value="Reset">
-        </div>
-        
+
     </div>
+
 </div>
+
+<!-- ---------------------------------Question 2------------------------------------------  -->
+
+
 
 <!-- Jquery con link 1 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="menu.js" ></script>
-<script src="quiz01.js"> </script>
-    <!-- Jquery con link 2 -->
 
+<script src="menu.js" ></script>
+
+<!-- Jquery con link 2 -->
+
+<script src="script.js"></script>
 
 </body>
+
 </html>

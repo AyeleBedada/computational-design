@@ -153,13 +153,16 @@ header h1{
 
 .draggable {
     height: 150px;
-    width: 150px;
+    width: 25%;
     margin: 10px;
     /*border: solid 2px black;*/
     cursor: pointer;
     background-color: #147a34;
     /* border: 2px solid rgb(7, 162, 64);*/
     text-align: center;
+    border-radius: 30px;
+    align-items: center;
+    align-content: center;
 }
 
 
@@ -171,19 +174,25 @@ header h1{
 
 .after-drop{
     height: 150px;
-    width: 150px;
+    width: 25%;
     margin: 10px;
     text-align: center;
     line-height: 20px;
+    border-radius: 30px;
+    align-items: center;
+    align-content: center;
 }
 .drop-target{
     height: 150px;
-    width: 150px;
+    width: 25%;
     /*border: 2px dashed black;*/
     border: 2px solid rgb(21, 87, 6);
     margin: 10px;
     text-align: center;
     line-height: 20px;
+    border-radius: 30px;
+    align-items: center;
+    align-content: center;
 }
 
 .subset{
