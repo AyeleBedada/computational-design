@@ -40,8 +40,6 @@ a{
     border-radius: 10px;
 }
 
-
-
 .objective0{
     background-color: #30ac63;
     margin-left: 20%;
@@ -149,6 +147,9 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-wrap: break-word;
+    container-type: inline-size;
+
 }
 
 .draggable {
@@ -165,34 +166,61 @@ header h1{
     align-content: center;
 }
 
-
 .drop-container{
     display: flex;
     align-items: center;
     justify-content: center;
+  /*  overflow-x: scroll; */
+  overflow-wrap: break-word;
+  container-type: inline-size;
+
+ 
+
 }
 
 .after-drop{
     height: 150px;
     width: 25%;
+   /* width: min-content; */
+   /* width: fit-content; */
     margin: 10px;
     text-align: center;
     line-height: 20px;
-    border-radius: 30px;
     align-items: center;
     align-content: center;
+  /*  overflow-x: scroll; */
+   overflow-wrap: break-word;
+  container-type: inline-size;
+ 
+  aspect-ratio: 1/1;
 }
+
 .drop-target{
     height: 150px;
     width: 25%;
+   /* width: min-content; */
+   /* width: fit-content; */
     /*border: 2px dashed black;*/
     border: 2px solid rgb(21, 87, 6);
     margin: 10px;
     text-align: center;
     line-height: 20px;
-    border-radius: 30px;
     align-items: center;
     align-content: center;
+  /*  overflow-x: scroll; */
+   overflow-wrap: break-word;
+   container-type: inline-size;
+   
+   aspect-ratio: 1/1;
+   
+}
+
+.drop-target>p{
+    font-size: clamp(0.8rem, 7cqi, 2rem);
+}
+
+.drag-container>p{
+    font-size: clamp(0.8rem, 7cqi, 2rem); 
 }
 
 .subset{
