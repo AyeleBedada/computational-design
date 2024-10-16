@@ -12,10 +12,8 @@
 
 <body>
 
-
-
-    <h1>Computational Design in Architecture [ARCH 4061]</h1>
-
+    <h1>Computational Design in Architecture [ARCH 4061]</h1>  <br><br><br>
+ 
     <!-- --------------------------------  SIDEBAR -------------------------------------------------------------------------   -->
     
     <!--menu button-->
@@ -34,6 +32,7 @@
             <!--Text Logo-->
             <h1>Computational Design</h1>
         </header> 
+    
             <!--  Menu item -->
             <!-- (.item>a>i.fas)*5  -->
             <div class="menu">
@@ -125,30 +124,153 @@
                 </div>
                 </div>
 
-
             </div>
         </div>
     
     <!-- -------------------------------  SIDEBAR   ----------------------------------------------------------------------------  -->
     
+    <h2 class="instruction">0.7, Interactive Unit Summery</h2> 
+    <p class="instruction">This page is prepared to help students summarize the unit under consideration </p>
 
 
-    <h2 class="instruction">0.2, Course Syllabus</h2>
+    <!-- ---------------------------------Question 1------------------------------------------  -->
+     
+    <p class="instruction" style="color: white;"> 1, On the interactive figure below drag and drop items from the first row to 
+        the second row by matching them correctly. If the box in the second raw turns green, you are correct. 
+        If turns to red, you are incorrect. </p>
 
-        <p class="instruction">You can view the <a href="https://drive.google.com/file/d/1g_pQjD_0xN1sTmFpoqwWzKlpC-ALjjWW/view?usp=drive_link" target="_blank">Course Syllabus</a> below. 
-            You can only view this file if you are signed in on your browser with the email you registered for this course.</p>
+<div class="instruction"> 
 
-      <div  class="instruction">
+    <div class="question">
+        
+        <div class="drag-container">
 
-        <iframe src="https://drive.google.com/file/d/1g_pQjD_0xN1sTmFpoqwWzKlpC-ALjjWW/preview" 
-        width="100%" height="600" allow="autoplay"></iframe>
+            <div class="draggable" draggable="true" data-correct="Computational Design">  
+               <p>Computational Design</p>
+            </div>
 
-      </div>
+            <div class="draggable" draggable="true" data-correct="Parametric Design">  
+                <p>Parametric Design </p>
+             </div>
 
-<!-- Jquery con link -->
+             <div class="draggable" draggable="true" data-correct="Generative Design">  
+               <p>Generative Design</p> 
+             </div>
+
+             <div class="draggable" draggable="true" data-correct="Generative AI Design">  
+                 <p>Generative AI Design</p>
+             </div>
+
+        </div>
+    </div>
+
+    <div class="question">
+
+        <div class="drop-container"> 
+            <div class="drop-target" data-correct="Generative AI Design">
+               <p>Relies on learning patterns and distributions from data to generate new solution.</p> 
+            </div>
+            <div class="drop-target" data-correct="Generative Design">
+            <!--Applies algorithms to parameters to generate hundreds or thousands of possible design variations to review and choose from.-->
+               <p>Uses algorithms to explore and optimize design solutions based on predefined criteria.</p> 
+            </div>
+            <div class="drop-target" data-correct="Computational Design">
+               <p>It comprizes Parametric Design, Generative Design and Generative AI Design.  </p> 
+            </div>
+            <div class="drop-target" data-correct="Parametric Design">
+                <p>Uses parameters and constraints to solve a design problem.</p>
+            </div>
+        
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ---------------------------------Question 2------------------------------------------  -->
+
+<p class="instruction" style="color: white;"> 2, In mathematics set operations,  A &#8838;  B (set A is subset of set B) 
+    means all elements of set A are found in set B. By taking this in to consideration,  drag the and drop the items in the 
+    first row to the second row in their logically correct places. If the box in the second raw turns green, you are correct. But 
+    if it turns to red, you are incorrect. </p>
+
+
+    <div class="instruction"> 
+
+        <div class="question">
+            
+            <div class="drag-container">
+    
+                <div class="draggable" draggable="true" data-correct="Computational Design">  
+                   <p>Computational Design</p>
+                </div>
+    
+                <div class="draggable" draggable="true" data-correct="Generative AI Design">  
+                    <p>Generative AI Design </p>
+                 </div>
+    
+                 <div class="draggable" draggable="true" data-correct="Generative Design">  
+                   <p>Generative Design</p> 
+                 </div>
+    
+                 <div class="draggable" draggable="true" data-correct="Parametric Design">  
+                     <p>Parametric Design</p>
+                 </div>
+    
+            </div>
+        </div>
+    
+        <div class="question">
+    
+            <div class="drop-container"> 
+
+                <div class="drop-target" data-correct="Generative AI Design">
+                    <p id="answer"> </p>
+                </div>
+
+               <p class="subset">&#8838;</p> 
+
+                <div class="drop-target" data-correct="Generative Design">
+                
+               <p id="answer"> </p>
+                </div>
+
+                <p class="subset">&#8838;</p> 
+
+                <div class="drop-target" data-correct="Parametric Design">
+                    <p id="answer"> </p>
+                </div>
+
+                <p class="subset">&#8838;</p> 
+
+                <div class="drop-target" data-correct="Computational Design">
+                    <p id="answer"> </p>
+                </div>
+            
+            </div>
+    
+        </div>
+    
+    </div>
+
+<!--Applies algorithms to parameters to generate hundreds or thousands of possible design variations to review and choose from.-->
+
+
+
+    <!-- ---------------------------------Question 3------------------------------------------  -->
+
+    <p class="instruction" style="color: white;"> 3, Sort........ </p>
+
+
+
+<!-- Jquery con link 1 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <script src="menu.js" ></script>
+
+<!-- Jquery con link 2 -->
+
+<script src="quiz-0.0.js"></script>
 
 </body>
 
