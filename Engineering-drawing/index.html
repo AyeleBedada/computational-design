@@ -8,18 +8,35 @@
     <link rel="stylesheet" href="style.css">
     <!--Icon Style-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+   
 </head>
 
 <body>
+<br><br><br><br>
+<div class="instruction">
+    <button style="width: 60px; height: 60px; border-radius: 20px; border: none; background-color: rgb(36, 98, 36);">
+        <a href="../index.html"><i class="fas fa"></i>List of Courses</a>
+    </button>
+</div>
 
-    <div class="instruction">
-        <button style="width: 60px; height: 60px; border-radius: 20px; border: none; background-color: rgb(36, 98, 36);">
-            <a href="../index.html"><i class="fas fa"></i>List of Courses</a>
-        </button>
-    </div>
+    <h1>Engineering Drawing [COTM-2051]</h1>
+
+
+       <!-- floating  window 
+
+<div id="floatCont">
+
+<div id="card">
     
-        <h1>Engineering Drawing [COTM-2051]</h1>
-    
+<p> Before submitting any of your assignments, please re-check (read) the assignment 
+instructions for updates!</p>
+<p>Hide or Move this draggable box incase it's covering information.</p>
+
+<button id="myButtonFloat">Hide</button> 
+
+</div>
+</div>
+       --> 
 
     <!-- --------------------------------  SIDEBAR -------------------------------------------------------------------------   -->
     
@@ -27,6 +44,7 @@
     <div class="menu-btn">
         <i class="fas fa-bars"></i>
      </div>
+
     <div class="side-bar">
             <!--Header Section-->
         <header>
@@ -36,14 +54,13 @@
             </div>
             <!--Logo image-->
             <img src="Chair_location.jpg" alt="Location of chair">
-            <!--Text Logo-->
             <h1>Engineering Drawing</h1>
         </header> 
             <!--  Menu item -->
             <!-- (.item>a>i.fas)*5  -->
             <div class="menu">
                 <div class="item"><a href="../index.html"><i class="fas fa"></i>List of Courses</a></div>
-                <div class="item"><a href="index.html"><i class="fas fa"></i>HOME</a></div>
+                <div class="item"><a href="ed-index.html"><i class="fas fa"></i>HOME</a></div>
                 <div class="item"><a href="interface_tutorial.html"><i class="fas fa"></i>Navigation Tutorial</a></div>
                 <div class="item"><a href="suggestions.html"><i class="fas fa"></i>Questions/Suggestions</a></div>
                 <!-- <div class="item"><a href="track_progress.html"><i class="fas fa"></i>Track Your Progress</a></div> -->
@@ -55,11 +72,11 @@
                 </a>
                 <div class="sub-menu">
                     <!--  (a.sub-item)* -->
-                 <a href="unit-00-introduction.html" class="sub-item">0.1, Unit Introduction</a> 
-                    <a href="syllabus.html" class="sub-item">0.2, Course Syllabus</a>
-                    <a href="grading and rubrics.html" class="sub-item">0.3, Grading and Rubrics</a>
-                     <!--<a href="assessment0.html" class="sub-item">0.4, Assessment-Instruction</a>-->
-                    <a href="assessement1.html" class="sub-item">0.4, Pre-course Assessment</a>
+                    <a href="unit-00-introduction.html" class="sub-item">0.1, Unit Introduction</a>
+                            <a href="syllabus.html" class="sub-item">0.2, Course Syllabus</a>
+                            <a href="grading and rubrics.html" class="sub-item">0.3, Grading and Rubrics</a>
+                             <!--<a href="assessment0.html" class="sub-item">0.4, Assessment-Instruction</a>-->
+                            <a href="assessement1.html" class="sub-item">0.4, Pre-course Assessment</a>
              <!--  
                     <a href="quiz-0.0.html" class="sub-item">0.7, Interactive Unit Summery</a>
                     <a href="quiz-0.1.html" class="sub-item">0.8, Unit quiz</a>
@@ -79,7 +96,7 @@
                 <a href="geometric-shapes.html" class="sub-item">1.1, Geometric Shapes</a>
                 <a href="assignment tessellation.html" class="sub-item">1.2, Tessellation Assignment</a>
                 </div>
-             
+        
                 </div>
     
                 <div class="item"><a class="sub-btn"><i class="fas fa"></i>Unit-2.0
@@ -112,38 +129,21 @@
         </div>
     <!-- -------------------------------  SIDEBAR   ----------------------------------------------------------------------------  -->
     
-    <h2 class="instruction">Unit 0.1, Unit Introduction: Pre-course Assessment and Course Syllabus</h2>
+        <p class="instruction">Welcome to the course, Engineering Drawing [COTM-2051]</p>
+    
+        <p class="instruction">This is a site prepared as a communication tool for the course Engineering Drawing [COTM-2051]</p>
+        <p class="instruction" style="color: white;">Please use the side bar to access the units and subunits of the course. Start from the<a class="navAnchor" href="interface_tutorial.html"> navigation tutorial</a>.</p>
+        
 
-        <p class="instruction">'Unit-0' of the course, Engineering Drawing [COTM-2051], is dedicated to 
-            <a href="https://ayelebedada.github.io/computational-design/assessment0.html" target="_blank">Pre-Course Assessment</a>, <a href="grading and rubrics.html" target="_blank">Grading and Rubrics</a>. Navigate 'unit-0' by making use of the sidebar explore the contents and 
-            complete all tasks included according to instructions indicated. </p> <br> <br>
-
-<div class="objective0">
-    <h3>Learning Objectives</h3>
-    <p>
-         <em> Course Learning Objectives</em> <br><br>
-.......
-     
-
-        In this units, students will: <br><br>
-   
-.......
-        <br><br><br>
-        <!--  
-        Describe key components of online student success in regional and specific context (CO1 & CO2)
-        Describe some of the design and delivery techniques of effective instructional content (CO1 & CO2)
-        Prepare content for optimizing instructor presence in an online course (CO1 & CO2)
-        Create a plan for implementing Master Class resources in an online course (CO1 & CO2)
-        Demonstrate proficient Open edX LMS navigation from a student perspective (CO1)
-        --> 
-           
-    </p>
-</div>
-      
-<!-- Jquery con link -->
+<!-- JS link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <script src="menu.js" ></script>
 
 </body>
+
+<!-- float box --> 
+
+<script src="float.js"> </script>
 
 </html>
