@@ -11,8 +11,13 @@
 </head>
 
 <body>
+    <div class="instruction">
+        <button style="width: 60px; height: 60px; border-radius: 20px; border: none; background-color: rgb(36, 98, 36);">
+            <a href="../index.html"><i class="fas fa"></i>List of Courses</a>
+        </button>
+</div>
 
-    <h1>Computational Design in Architecture [ARCH 4061]</h1>
+    <h1>Computational Design in Architecture [ARCH 4061]</h1>  <br><br><br>
  
     <!-- --------------------------------  SIDEBAR -------------------------------------------------------------------------   -->
     
@@ -36,7 +41,8 @@
             <!--  Menu item -->
             <!-- (.item>a>i.fas)*5  -->
             <div class="menu">
-                <div class="item"><a href="index.html"><i class="fas fa"></i>HOME</a></div>
+                <div class="item"><a href="../index.html"><i class="fas fa"></i>List of Courses</a></div>
+                <div class="item"><a href="cd-index.html"><i class="fas fa"></i>HOME</a></div>
                 <div class="item"><a href="interface_tutorial.html"><i class="fas fa"></i>Navigation Tutorial</a></div>
                 <div class="item"><a href="suggestions.html"><i class="fas fa"></i>Questions/Suggestions</a></div>
                 <div class="item"><a href="track_progress.html"><i class="fas fa"></i>Track Your Progress</a></div>
@@ -129,12 +135,15 @@
     
     <!-- -------------------------------  SIDEBAR   ----------------------------------------------------------------------------  -->
     
-    <h2 class="instruction">1.x, Interactive Unit Summery</h2>  
+    <h2 class="instruction">0.7, Interactive Unit Summery</h2> 
     <p class="instruction">This page is prepared to help students summarize the unit under consideration </p>
-    
-    <p class="instruction" style="color: white;"> 1, On the interactive figure below drag and drop items from the top raw to the bottom raw
-        by matching them correctly. If the box in the first raw turns green, you are correct. 
-        If it turns to red, you are incorrect. </p>
+
+
+    <!-- ---------------------------------Question 1------------------------------------------  -->
+     
+    <p class="instruction" style="color: white;"> 1, On the interactive figure below drag and drop items from the first row to 
+        the second row by matching them correctly. If the box in the second raw turns green, you are correct. 
+        If turns to red, you are incorrect. </p>
 
 <div class="instruction"> 
 
@@ -142,15 +151,20 @@
         
         <div class="drag-container">
 
-            <div class="draggable" draggable="true" data-correct="Geometric constraints">  
-               <p>Geometric constraint</p>
+            <div class="draggable" draggable="true" data-correct="Computational Design">  
+               <p>Computational Design</p>
             </div>
 
-            <div class="draggable" draggable="true" data-correct="Dimensional constraints">  
-                <p>Dimensional constraints</p>
+            <div class="draggable" draggable="true" data-correct="Parametric Design">  
+                <p>Parametric Design </p>
              </div>
-             <div class="draggable" draggable="true" data-correct="Expression">  
-               <p>Expression</p> 
+
+             <div class="draggable" draggable="true" data-correct="Generative Design">  
+               <p>Generative Design</p> 
+             </div>
+
+             <div class="draggable" draggable="true" data-correct="Generative AI Design">  
+                 <p>Generative AI Design</p>
              </div>
 
         </div>
@@ -159,20 +173,20 @@
     <div class="question">
 
         <div class="drop-container"> 
-         
-            <div class="drop-target" data-correct="Dimensional constraints">
+            <div class="drop-target" data-correct="Generative AI Design">
+               <p>Relies on learning patterns and distributions from data to generate new solution.</p> 
+            </div>
+            <div class="drop-target" data-correct="Generative Design">
             <!--Applies algorithms to parameters to generate hundreds or thousands of possible design variations to review and choose from.-->
-                <p>Constrains elements with values of diameters, radius, angles, etc.</p>
+               <p>Uses algorithms to explore and optimize design solutions based on predefined criteria.</p> 
             </div>
-            <div class="drop-target" data-correct="Expression">
-               <p>A formula that describes and manipulates the parametric relationship between elements.</p> 
+            <div class="drop-target" data-correct="Computational Design">
+               <p>It comprizes Parametric Design, Generative Design and Generative AI Design.  </p> 
             </div>
-
-            <div class="drop-target" data-correct="Geometric constraints">
-                <p>Constrains elements with relationships of: parallel, perpendicular etc.</p>
-     
+            <div class="drop-target" data-correct="Parametric Design">
+                <p>Uses parameters and constraints to solve a design problem.</p>
             </div>
-            
+        
         </div>
 
     </div>
@@ -180,6 +194,78 @@
 </div>
 
 <!-- ---------------------------------Question 2------------------------------------------  -->
+
+<p class="instruction" style="color: white;"> 2, In mathematics set operations,  A &#8838;  B (set A is subset of set B) 
+    means all elements of set A are found in set B. By taking this in to consideration,  drag the and drop the items in the 
+    first row to the second row in their logically correct places. If the box in the second raw turns green, you are correct. But 
+    if it turns to red, you are incorrect. </p>
+
+
+    <div class="instruction"> 
+
+        <div class="question">
+            
+            <div class="drag-container">
+    
+                <div class="draggable" draggable="true" data-correct="Computational Design">  
+                   <p>Computational Design</p>
+                </div>
+    
+                <div class="draggable" draggable="true" data-correct="Generative AI Design">  
+                    <p>Generative AI Design </p>
+                 </div>
+    
+                 <div class="draggable" draggable="true" data-correct="Generative Design">  
+                   <p>Generative Design</p> 
+                 </div>
+    
+                 <div class="draggable" draggable="true" data-correct="Parametric Design">  
+                     <p>Parametric Design</p>
+                 </div>
+    
+            </div>
+        </div>
+    
+        <div class="question">
+    
+            <div class="drop-container"> 
+
+                <div class="drop-target" data-correct="Generative AI Design">
+                    <p id="answer"> </p>
+                </div>
+
+               <p class="subset">&#8838;</p> 
+
+                <div class="drop-target" data-correct="Generative Design">
+                
+               <p id="answer"> </p>
+                </div>
+
+                <p class="subset">&#8838;</p> 
+
+                <div class="drop-target" data-correct="Parametric Design">
+                    <p id="answer"> </p>
+                </div>
+
+                <p class="subset">&#8838;</p> 
+
+                <div class="drop-target" data-correct="Computational Design">
+                    <p id="answer"> </p>
+                </div>
+            
+            </div>
+    
+        </div>
+    
+    </div>
+
+<!--Applies algorithms to parameters to generate hundreds or thousands of possible design variations to review and choose from.-->
+
+
+
+    <!-- ---------------------------------Question 3------------------------------------------  -->
+
+    <p class="instruction" style="color: white;"> 3, Sort........ </p>
 
 
 

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,11 +12,14 @@
 </head>
 
 <body>
-
-
+    <div class="instruction">
+        <button style="width: 60px; height: 60px; border-radius: 20px; border: none; background-color: rgb(36, 98, 36);">
+            <a href="../index.html"><i class="fas fa"></i>List of Courses</a>
+        </button>
+</div>
 
     <h1>Computational Design in Architecture [ARCH 4061]</h1>
-
+ 
     <!-- --------------------------------  SIDEBAR -------------------------------------------------------------------------   -->
     
     <!--menu button-->
@@ -34,10 +38,12 @@
             <!--Text Logo-->
             <h1>Computational Design</h1>
         </header> 
+    
             <!--  Menu item -->
             <!-- (.item>a>i.fas)*5  -->
             <div class="menu">
-                <div class="item"><a href="index.html"><i class="fas fa"></i>HOME</a></div>
+                <div class="item"><a href="../index.html"><i class="fas fa"></i>List of Courses</a></div>
+                <div class="item"><a href="cd-index.html"><i class="fas fa"></i>HOME</a></div>
                 <div class="item"><a href="interface_tutorial.html"><i class="fas fa"></i>Navigation Tutorial</a></div>
                 <div class="item"><a href="suggestions.html"><i class="fas fa"></i>Questions/Suggestions</a></div>
                 <div class="item"><a href="track_progress.html"><i class="fas fa"></i>Track Your Progress</a></div>
@@ -58,7 +64,6 @@
                     <a href="quiz-0.1.html" class="sub-item">0.8, Unit quiz</a>
                 </div>
                 </div>
-
 
                 <div class="item"><a class="sub-btn"><i class="fas fa"></i>Unit-1.0
    
@@ -125,30 +130,57 @@
                 </div>
                 </div>
 
-
             </div>
         </div>
     
     <!-- -------------------------------  SIDEBAR   ----------------------------------------------------------------------------  -->
     
+    <h2 class="instruction">0.8, Unit Quiz</h2>  
+    <p class="instruction">This page is prepared to quiz students based on the unit under consideration </p>
+    
+    <p class="instruction" style="color: white;"> 1, On the interactive figure below drag and drop items 
+        from the top raw to the bottom raw by matching them correctly. If the box in the first raw turns green, 
+        you are correct. If it turns to red, you are incorrect. </p>
 
+<div class="instruction"> 
 
-    <h2 class="instruction">0.2, Course Syllabus</h2>
+    <div class="question">
+        <div class="drag-container">
+            <div class="draggable" draggable="true" data-correct="Geometric constraints">  
+               <p>Geometric constraint</p>
+            </div>
+            <div class="draggable" draggable="true" data-correct="Dimensional constraints">  
+                <p>Dimensional constraints</p>
+             </div>
+             <div class="draggable" draggable="true" data-correct="Expression">  
+               <p>Expression</p> 
+             </div>
+        </div>
+    </div>
+    <div class="question">
+        <div class="drop-container"> 
+            <div class="drop-target" data-correct="Dimensional constraints">
+            <!--Applies algorithms to parameters to generate hundreds or thousands of possible design variations to review and choose from.-->
+                <p>Constrains elements with values of diameters, radius, angles, etc.</p>
+            </div>
+            <div class="drop-target" data-correct="Expression">
+               <p>A formula that describes and manipulates the parametric relationship between elements.</p> 
+            </div>
+            <div class="drop-target" data-correct="Geometric constraints">
+                <p>Constrains elements with relationships of: parallel, perpendicular etc.</p>
+            </div> 
+        </div>
+    </div>
 
-        <p class="instruction">You can view the <a href="https://drive.google.com/file/d/1g_pQjD_0xN1sTmFpoqwWzKlpC-ALjjWW/view?usp=drive_link" target="_blank">Course Syllabus</a> below. 
-            You can only view this file if you are signed in on your browser with the email you registered for this course.</p>
+</div>
 
-      <div  class="instruction">
+<!-- ---------------------------------Question 2------------------------------------------  -->
 
-        <iframe src="https://drive.google.com/file/d/1g_pQjD_0xN1sTmFpoqwWzKlpC-ALjjWW/preview" 
-        width="100%" height="600" allow="autoplay"></iframe>
-
-      </div>
-
-<!-- Jquery con link -->
+<!-- Jquery con link 1 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-<script src="menu.js" ></script>
+<script src="menu.js"></script>
+<!-- Jquery con link 2 -->
+<script src="quiz-0.0.js"></script>
 
 </body>
 
