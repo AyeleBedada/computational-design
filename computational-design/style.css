@@ -6,12 +6,17 @@ body{
     text-align: center;
     font-family: Roboto, Arial, sans-serif;
 }
+.listCourses{
+    width: 60px;
+    height: 60px; 
+    border-radius: 20px; 
+    border: none; 
+    background-color: rgb(36, 98, 36);
+}
 .home{
     align-items: center;
-    align-content: center;
-    
+    align-content: center; 
 }
-
 .navAnchor{
     color: yellow;
 }
@@ -39,7 +44,6 @@ a{
     background: linear-gradient(#087421, #118d4f);
     border-radius: 10px;
 }
-
 .objective0{
     background-color: #30ac63;
     margin-left: 20%;
@@ -67,7 +71,6 @@ header img{
     margin: 15px;
     margin-left: 10px;
     margin-top: 30px;
-
 }
 .close-btn{
     position: absolute;
@@ -101,7 +104,6 @@ header h1{
    /* height of side bar*/
    line-height: 30px;
 }
-
 .item i{
     margin-right: 15px;
 }
@@ -149,9 +151,7 @@ header h1{
     justify-content: center;
     overflow-wrap: break-word;
     container-type: inline-size;
-
 }
-
 .draggable {
     height: 150px;
     width: 25%;
@@ -165,7 +165,6 @@ header h1{
     align-items: center;
     align-content: center;
 }
-
 .drop-container{
     display: flex;
     align-items: center;
@@ -173,11 +172,7 @@ header h1{
   /*  overflow-x: scroll; */
   overflow-wrap: break-word;
   container-type: inline-size;
-
- 
-
 }
-
 .after-drop{
     height: 150px;
     width: 25%;
@@ -194,7 +189,6 @@ header h1{
  
   aspect-ratio: 1/1;
 }
-
 .drop-target{
     height: 150px;
     width: 25%;
@@ -210,9 +204,7 @@ header h1{
   /*  overflow-x: scroll; */
    overflow-wrap: break-word;
    container-type: inline-size;
-   
    aspect-ratio: 1/1;
-   
 }
 
 .drop-target>p{
