@@ -219,7 +219,7 @@ header h1{
 
 
 .correct{
-    background-color: #30ac63;
+    background-color: #53f86e
   
 }
 .wrong{
@@ -323,7 +323,7 @@ header h1{
     border:1px dashed #000; 
 }
 #questionDiv .correctAnswer{	/* CSS indicating correct answer */
-    background-color:rgb(9, 178, 9);
+    background-color:#53f86e;
     color:#fff;
 }
 #questionDiv .wrongAnswer{	/* CSS indicating wrong answer */
