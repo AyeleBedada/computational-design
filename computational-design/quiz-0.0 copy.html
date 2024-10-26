@@ -14,8 +14,9 @@
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <!--Icon Style-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
    <link rel="stylesheet" href="dragMatch.css">
-   <script src="dragMatch.js" defer> </script>
+<script src="dragMatch.js" defer> </script>
 
 </head>
 
@@ -145,18 +146,17 @@
     
     <!-- -------------------------------  SIDEBAR   ----------------------------------------------------------------------------  -->
     
-    <h2 class="instruction">0.7, Interactive Unit Summery</h2>  <br> <br>
-    <p class="instruction">This page is prepared to help students summarize the unit under consideration </p> <br><br>
+    <h2 class="instruction">0.7, Interactive Unit Summery</h2> 
+    <p class="instruction">This page is prepared to help students summarize the unit under consideration </p>
 
 
     <!-- ---------------------------------Question 1------------------------------------------  -->
-     <div class="objective0 instruction">
-    
-    <p style="color: white;"> 1, On the interactive figure below drag and drop items from the first row to 
+     
+    <p class="instruction" style="color: white;"> 1, On the interactive figure below drag and drop items from the first row to 
         the second row by matching them correctly. If the box in the second raw turns green, you are correct. 
         If turns to red, you are incorrect. </p>
-
-<div > 
+<!--
+   <div class="instruction"> 
 
     <div class="question">
         
@@ -188,140 +188,81 @@
                <p>Relies on learning patterns and distributions from data to generate new solution.</p> 
             </div>
             <div class="drop-target" data-correct="Generative Design">
-            <!--Applies algorithms to parameters to generate hundreds or thousands of possible design variations to review and choose from.-->
-               <p>Uses algorithms to explore and optimize design solutions based on predefined criteria.</p> 
-            </div>
-            <div class="drop-target" data-correct="Computational Design">
-               <p>It comprizes Parametric Design, Generative Design and Generative AI Design.  </p> 
-            </div>
-            <div class="drop-target" data-correct="Parametric Design">
-                <p>Uses parameters and constraints to solve a design problem.</p>
-            </div>
-        
+         make comment: Applies algorithms to parameters to generate hundreds or thousands of possible design variations to review and choose from.
+            <p>Uses algorithms to explore and optimize design solutions based on predefined criteria.</p> 
         </div>
-
+        <div class="drop-target" data-correct="Computational Design">
+           <p>It comprizes Parametric Design, Generative Design and Generative AI Design.  </p> 
+        </div>
+        <div class="drop-target" data-correct="Parametric Design">
+            <p>Uses parameters and constraints to solve a design problem.</p>
+        </div>
+    
     </div>
 
 </div>
 
-</div>
-<!-- ---------------------------------Question 2------------------------------------------  -->
-<br><br>
-<div class="objective0 instruction">
-<p style="color: white;"> 2, In mathematics set operations,  A &#8838;  B (set A is subset of set B) 
-    means all elements of set A are found in set B. By taking this in to consideration,  drag and drop the items in the 
-    first row to the second row in their logically correct places. If you are correct, the data from the first row will transfer 
-    to the second row. If you are not, the data from the first row will not transfer to the second row. </p>
-
-        <section class="draggable-elements">
-        
-            <div id="GD" class="drag" style="color:white;" draggable="true">  
-                <p>Generative Design</p> 
-              </div>
-        
-              <div id="CD" class="drag" style="color:white;" draggable="true">
-                <p>Computational Design</p>
-            </div>
-        
-             <div id="GAI" class="drag" style="color:white;" draggable="true">  
-                 <p>Generative AI Design </p>
-             </div>
-        
-              <div id="PD" class="drag" style="color: white;"  draggable="true">  
-                <p>Parametric Design</p>
-              </div> 
-          
-        </section>
-        
-        <section class="droppable-elements ">
-        
-            <div class="drop" data-draggable-id="GAI">
-                <span  class="replace">Generative AI Design</span>
-            </div> 
-        
-            <p class="subset">&#8838;</p> 
-        
-            <div class="drop" data-draggable-id="GD">
-                <span class="replace">Generative Design</span>  
-            </div> 
-        
-            <p class="subset">&#8838;</p> 
-        
-            <div class="drop" data-draggable-id="PD">
-                <span  class="replace">Parametric Design</span>  
-            </div> 
-        
-            <p class="subset">&#8838;</p> 
-        
-            <div class="drop" data-draggable-id="CD">
-                <span  class="replace">Computational Design</span> 
-            </div>
-        
-        </section>
-        </div>
-
-<!--
-      <div class="instruction"> 
-
-        <div class="question">
-            
-            <div class="drag-container">
-    
-                <div class="draggable" draggable="true" data-correct="Computational Design">  
-                   <p>Computational Design</p>
-                </div>
-    
-                <div class="draggable" draggable="true" data-correct="Generative AI Design">  
-                    <p>Generative AI Design </p>
-                 </div>
-    
-                 <div class="draggable" draggable="true" data-correct="Generative Design">  
-                   <p>Generative Design</p> 
-                 </div>
-    
-                 <div class="draggable" draggable="true" data-correct="Parametric Design">  
-                     <p>Parametric Design</p>
-                 </div>
-    
-            </div>
-        </div>
-    
-        <div class="question">
-    
-            <div class="drop-container"> 
-
-                <div class="drop-target" data-correct="Generative AI Design">
-                    <p id="answer"> </p>
-                </div>
-
-               <p class="subset">&#8838;</p> 
-
-                <div class="drop-target" data-correct="Generative Design">
-                
-               <p id="answer"> </p>
-                </div>
-
-                <p class="subset">&#8838;</p> 
-
-                <div class="drop-target" data-correct="Parametric Design">
-                    <p id="answer"> </p>
-                </div>
-
-                <p class="subset">&#8838;</p> 
-
-                <div class="drop-target" data-correct="Computational Design">
-                    <p id="answer"> </p>
-                </div>
-            
-            </div>
-    
-        </div>
-    
-    </div>
+</div>     
 -->
-  
+<div class="instruction"> 
 
-<!--Applies algorithms to parameters to generate hundreds or thousands of possible design variations to review and choose from.-->
+<section class="draggable-elements">
+
+    <div id="GD" class="drag" style="color:  white;" draggable="true">  
+        <p>Generative Design</p> 
+      </div>
+
+      <div id="CD" class="drag" style="color: white;" draggable="true">
+        <p>Computational Design</p>
+    </div>
+
+
+     <div id="GAI" class="drag" style="color:  white;" draggable="true">  
+         <p>Generative AI Design </p>
+     </div>
+
+      <div id="PD" class="drag" style="color:  white;"  draggable="true">  
+        <p>Parametric Design</p>
+      </div> 
+  
+</section>
+
+<section class="droppable-elements">
+
+
+    <div class="drop" data-draggable-id="GAI">
+        <span  class="replace">Generative AI Design</span>
+    </div> 
+
+    <p class="subset">&#8838;</p> 
+
+    <div class="drop" data-draggable-id="GD">
+        <span class="replace">Generative Design</span>  
+    </div> 
+
+    <p class="subset">&#8838;</p> 
+
+
+    <div class="drop" data-draggable-id="PD">
+        <span  class="replace">Parametric Design</span>  
+    </div> 
+
+    <p class="subset">&#8838;</p> 
+
+    <div class="drop" data-draggable-id="CD">
+        <span  class="replace">Computational Design</span> 
+    </div>
+
+</section>
+
+</div>
+
+
+
+
+
+
+  
 
 
 
