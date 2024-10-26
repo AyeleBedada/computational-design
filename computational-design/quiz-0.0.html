@@ -15,7 +15,8 @@
     <!--Icon Style-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
    <link rel="stylesheet" href="dragMatch.css">
-   <script src="dragMatch.js" defer> </script>
+   <script src="dragMatch.js" defer> </script>\
+   <link rel="stylesheet" href="sort1.css">
 
 </head>
 
@@ -154,9 +155,9 @@
     
     <p style="color: white;"> 1, On the interactive figure below drag and drop items from the first row to 
         the second row by matching them correctly. If the box in the second raw turns green, you are correct. 
-        If turns to red, you are incorrect. </p>
+        If turns to red, you are incorrect. </p> <br><br>
 
-<div > 
+
 
     <div class="question">
         
@@ -201,17 +202,18 @@
         </div>
 
     </div>
-
-</div>
-
-</div>
+    <br> <br>
+</div> 
 <!-- ---------------------------------Question 2------------------------------------------  -->
 <br><br>
 <div class="objective0 instruction">
+
 <p style="color: white;"> 2, In mathematics set operations,  A &#8838;  B (set A is subset of set B) 
     means all elements of set A are found in set B. By taking this in to consideration,  drag and drop the items in the 
     first row to the second row in their logically correct places. If you are correct, the data from the first row will transfer 
     to the second row. If you are not, the data from the first row will not transfer to the second row. </p>
+
+    <br>
 
         <section class="draggable-elements">
         
@@ -258,8 +260,9 @@
             </div>
         
         </section>
+        <br> <br>
         </div>
-
+<br><br>
 <!--
       <div class="instruction"> 
 
@@ -326,13 +329,41 @@
 
 
     <!-- ---------------------------------Question 3------------------------------------------  -->
+<div class="objective0">
+    <p  style="color: white;"> 3, Sort the following plugins by dragging and dropping them in to the box containing the name of their corresponding software.
+        If you are correct the plugin box turns green and if you are wrong it stays yellow.</p> <br><br><br>
 
-    <p class="instruction" style="color: white;"> 3, Sort........ </p>
+   
+
+    <div class="draggable1 itemA">Rhino.Inside</div>
+    <div class="draggable1 itemB">Section tool</div>
+    <div class="draggable1 itemB">Ladybug</div>
+    <div class="draggable1 itemA">Dynamo</div>
+    <div class="draggable1 itemA">pyRevit</div>
+    <div class="draggable1 itemB">Grasshopper</div>
+   
 
 
+
+
+    <div class="container">
+    
+        <div  id="dropzoneA" class="interact dropzone"></div>
+        <div  id="dropzoneB" class="interact dropzone"></div>
+    
+    </div>
+    <br><br>
+
+</div>
+ 
+
+
+  <br><br>
 
 <!-- Jquery con link 1 -->
+<script src="https://unpkg.com/interactjs/dist/interact.min.js"> </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="sort1.js"></script>
 
 <script src="menu.js" ></script>
 
