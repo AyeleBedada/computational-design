@@ -339,5 +339,40 @@ header h1{
     gap: 10px;
 }
 
+/*
+.SheetContainer{
+    background-color: yellow;
+    width: 100%;
+    display: flex;
+    float: left;
+}
+.googlSheet1{
 
+    width: 100%;
+}
 
+*/
+
+.SheetContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /*justify-content: center; */
+    gap: 10px;
+    overflow-wrap: break-word;
+    container-type: inline-size;
+}
+.googlSheet1 {
+   /* height: 150px;*/
+    width: 45%;
+    margin: 3px;
+    /*border: solid 2px black;*/
+    cursor: pointer;
+   /* background-color: #147a34;*/
+    /* border: 2px solid rgb(7, 162, 64);*/
+    float: left;
+   /* text-align: center;
+    border-radius: 30px;
+    align-items: center;
+    align-content: center; */
+}
