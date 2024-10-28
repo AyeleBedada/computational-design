@@ -272,7 +272,7 @@ header h1{
  
 #card{
     width: 200px;
-    height: 210px;
+    height: 300px;
     background-color: yellow;
     border-radius: 5px;
     cursor: pointer;
@@ -280,6 +280,7 @@ header h1{
     padding: 20px;
     padding-top: 50px;
     text-align: left;
+    float: right;
 }
 
 #myButtonFloat{
