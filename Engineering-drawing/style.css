@@ -382,6 +382,13 @@ header h1{
     float:left;
 }
 
+.slidePadlet1{
+    display: flex;
+    width: 75%;
+    gap: 10px;
+}
+
+
 
 
 

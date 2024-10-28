@@ -216,11 +216,8 @@ header h1{
     font-size: clamp(0.8rem, 7cqi, 2rem); 
 }
 
-
-
 .correct{
     background-color: #53f86e
-  
 }
 .wrong{
     background-color: #e16557;
@@ -336,6 +333,11 @@ header h1{
     display:none;
 }	
 
+.slidePadlet1{
+    display: flex;
+    width: 75%;
+    gap: 10px;
+}
 
 
 
