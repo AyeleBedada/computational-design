@@ -376,3 +376,23 @@ header h1{
     align-items: center;
     align-content: center; */
 }
+
+
+.lessonPlan{
+    width: 100%;
+}
+
+.table{
+    background-color: yellow;
+    width: 100%;
+}
+
+th{
+    background-color: rgb(154, 219, 23);
+    text-align: center;
+}
+
+tr{
+    background-color: yellow;
+}
+
