@@ -383,7 +383,7 @@ header h1{
 }
 
 .table{
-    background-color: yellow;
+   /*  background-color: yellow;*/
     width: 100%;
 }
 
@@ -393,6 +393,7 @@ th{
 }
 
 tr{
-    background-color: yellow;
+    background-color: rgb(11, 131, 41);
 }
+
 
