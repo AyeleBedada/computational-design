@@ -387,6 +387,23 @@ header h1{
     width: 100%;
   
 }
+.lessonPlan{
+    width: 100%;
+}
+
+.table{
+    background-color: yellow;
+    width: 100%;
+}
+
+th{
+    background-color: rgb(154, 219, 23);
+    text-align: center;
+}
+
+tr{
+    background-color: yellow;
+}
 
 
 
