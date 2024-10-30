@@ -2,7 +2,7 @@
 body{
     min-height: 100vh;
     padding: 1% 1%;
-    background-color: rgb(57, 130, 59);
+    background-color:  #2ea15a;
     text-align: center;
     font-family: Roboto, Arial, sans-serif;
 }
@@ -11,7 +11,7 @@ body{
     height: 60px; 
     border-radius: 20px; 
     border: none; 
-    background-color: rgb(36, 98, 36);
+    background-color:  #186f3a;
 }
 .home{
     align-items: center;
@@ -56,7 +56,7 @@ a{
     padding-top: 2%;
 }
 .side-bar{
-    background: #355530;
+    background:#186f3a;
     width: 250px;
     left: -250px;
     height: 100vh;
