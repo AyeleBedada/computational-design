@@ -361,12 +361,9 @@ header h1{
     display:none;
 }	
 
-
 .sideWays{
     width: 100%;
     /*    display: flex;
-
-
     container-type: inline-size; */
  
   }
@@ -385,9 +382,7 @@ header h1{
 .slidePadlet1{
     display: flex;
     width: 100%;
-  
 }
-
 
 .lessonPlan{
     width: 100%;
