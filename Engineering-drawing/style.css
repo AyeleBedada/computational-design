@@ -262,24 +262,25 @@ header h1{
 
 /* Float window */
 
+/*
+
 #floatCont{
-/*background-color: #212228; */
-  /*  background-image: linear-gradient(#292a30 .1em, transparent .1em),
+    background-color: #212228; 
+    background-image: linear-gradient(#292a30 .1em, transparent .1em),
     linear-gradient(90deg, #292a30 .1em, transparent .1em);
-    */
-    background-size: 4em 4em; 
-    /* height: 100vh; */
+    background-size: 4em 4em;
+    height: 100vh;
 }
- 
+ */
 #card{
-    width: 200px;
+    width: 350px;
     height: 300px;
     background-color: yellow;
     border-radius: 5px;
     cursor: pointer;
     position: fixed;
-    padding: 20px;
-    padding-top: 50px;
+    padding: 10px;
+    padding-top: 25px;
     text-align: left;
 }
 
