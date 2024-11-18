@@ -380,10 +380,16 @@ header h1{
     /* border: 2px solid rgb(7, 162, 64);*/
     float:left;
 }
-
+/*
 .slidePadlet1{
     display: flex;
     width: 100%;
+}
+*/
+.slidePadlet1{
+    display: flex;
+    width: 75%;
+    gap: 10px;
 }
 
 .lessonPlan{
