@@ -15,6 +15,11 @@
         <!--Icon Style-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+        <link rel="stylesheet" href="dragMatch.css">
+        <script src="dragMatch.js" defer> </script>
+        <link rel="stylesheet" href="sort1.css">
+
 </head>
 <body>
         <div class="instruction">
@@ -37,7 +42,7 @@
 <br>
     <p>Your next deadline: <br>
      <p>
-        Six tasks: Parametric modeling without scripting, November 29, 2024 at 11:30 AM.</p>
+        Six tasks: Parametric modeling without scripting, by November 29, 2024 at 11:30 AM.</p>
     </div>
     </div>
 
@@ -188,8 +193,72 @@
         (F) Interpreted Chess set: <br>
         For this exercise, you are expected to prepare/ design a chess set by interpreting the traditional chess 
         set according to your interest in showing your mass modeling skills/ design in general.
-</p>
+</p>  <br>
 
+<div class="objective0 instruction">
+
+        <p style="color: white;"> To make sure you understand the tasks under consideration, try to match the task title on the first raws below 
+             with the correct example on the second raw. If you are correct, the background of the item on the second raw will turn white. </p>
+
+                <section class="draggable-elements">
+                
+                    <div id="particle" class="drag" style="color:white;" draggable="true">  
+                        <p>Cubic Mass and Parametric Particles</p> 
+                      </div>
+                
+                      <div id="furniture" class="drag" style="color:white;" draggable="true">
+                        <p> Parametric Furniture/ fixture</p>
+                    </div>
+                
+                     <div id="nested" class="drag" style="color:white;" draggable="true">  
+                         <p>Parametric Nested Families</p>
+                     </div>
+                
+                      <div id="reactor" class="drag" style="color: white;"  draggable="true">  
+                        <p> Parametric two point reactor system applied on a building facade</p>
+                      </div> 
+
+                      <div id="chrisLasch" class="drag" style="color: white;"  draggable="true">  
+                        <p> Parametric table by Chris Lasch</p>
+                      </div> 
+
+                      <div id="chess" class="drag" style="color: white;"  draggable="true">  
+                        <p> Interpreted chess set/ pieces parametric modeling</p>
+                      </div> 
+                  
+                </section>
+                
+                <section class="droppable-elements" >
+                
+                    <div class="drop" data-draggable-id="nested">
+                        <span  class="replace"><img src="images/nested.jpg" alt="parametric nested family modeling" width="80%"></span>
+                    </div> 
+
+                    <div class="drop" data-draggable-id="chess">
+                        <span  class="replace"><img src="images/chess.jpg" alt="interpreted chess set/ pieces parametric modeling" width="80%"></span> 
+                    </div>
+
+                    <div class="drop" data-draggable-id="reactor">
+                        <span  class="replace"><img src="images/two point reactor.jpg" alt="parametric two point reactor system applied on a building facade" width="80%"></span>  
+                    </div> 
+
+                
+                    <div class="drop" data-draggable-id="particle">
+                        <span class="replace"><img src="images/cube.jpg" alt="Parametric particles families for cubic mass faces" width="80%"></span>  
+                    </div>  
+                
+                
+                    <div class="drop" data-draggable-id="furniture">
+                        <span  class="replace"><img src="images/furniture_fixture.jpg" alt="parametric furniture / fixture" width="80%"></span> 
+                    </div>
+
+                    <div class="drop" data-draggable-id="chrisLasch">
+                        <span  class="replace"><img src="images/table by Chris Lasch.jpg" alt="parametric table by Chris Lasch" width="80%"></span> 
+                    </div>
+                
+                
+                </section>
+                
                 </div>
                
 
@@ -468,9 +537,19 @@
 
         <script src="menu.js" ></script>
 
+        <script src="https://unpkg.com/interactjs/dist/interact.min.js"> </script>
+
+<script src="sort1.js"></script>
+
+<!-- Jquery con link 2 -->
+
+<script src="quiz-0.0.js"></script>
+
+
 </body>
 
 <!-- float box --> 
 <script src="float.js"> </script>
+
 
 </html>
