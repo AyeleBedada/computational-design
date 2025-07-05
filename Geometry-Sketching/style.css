@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+ @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body{
     min-height: 100vh;
     padding: 1% 1%;
@@ -7,19 +7,19 @@ body{
     text-align: center;
     font-family: Roboto, Arial, sans-serif;
 }
+
+
 .listCourses{
     width: 60px;
     height: 60px; 
     border-radius: 20px; 
     border: none; 
-    background-color:  #186f3a;
+    background-color: #186f3a;
 }
 .home{
     align-items: center;
-    align-content: center;
-    
+    align-content: center; 
 }
-
 .navAnchor{
     color: yellow;
 }
@@ -44,20 +44,19 @@ a{
     background: #d1e5ff;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(#087421, #118d4f);
+    background: linear-gradient(#2ea15a, #118d4f);
     border-radius: 10px;
 }
-
 .objective0{
     background-color: #30ac63;
     margin-left: 20%;
-    margin-right: 1.5%;
+   /* margin-right: 1.5%; */
     text-align: left;
     padding-left: 2%;
     padding-top: 2%;
 }
 .side-bar{
-    background:#2ea15a;
+    background: #2ea15a;
     width: 250px;
     left: -250px;
     height: 100vh;
@@ -67,6 +66,7 @@ a{
     transition: 0.6s ease;
     transition-property: left;
 }
+
 header{
     background: #538a4e;
 }
@@ -75,7 +75,6 @@ header img{
     margin: 15px;
     margin-left: 10px;
     margin-top: 30px;
-
 }
 .close-btn{
     position: absolute;
@@ -160,6 +159,18 @@ header h1{
 .rotate{
     transform: rotate(90deg);
 }
+.side-bar.active{
+   left:0; 
+}
+.side-bar::-webkit-scrollbar{
+    width: opx;
+}
+.item .sub-menu a{
+    padding-left: 2px;
+}
+.rotate{
+    transform: rotate(90deg);
+}
 
 .question p{
     font-size: 18px;
@@ -173,9 +184,7 @@ header h1{
     justify-content: center;
     overflow-wrap: break-word;
     container-type: inline-size;
-
 }
-
 .draggable {
     height: 150px;
     width: 25%;
@@ -189,7 +198,6 @@ header h1{
     align-items: center;
     align-content: center;
 }
-
 .drop-container{
     display: flex;
     align-items: center;
@@ -197,11 +205,7 @@ header h1{
   /*  overflow-x: scroll; */
   overflow-wrap: break-word;
   container-type: inline-size;
-
- 
-
 }
-
 .after-drop{
     height: 150px;
     width: 25%;
@@ -218,7 +222,6 @@ header h1{
  
   aspect-ratio: 1/1;
 }
-
 .drop-target{
     height: 150px;
     width: 25%;
@@ -234,9 +237,7 @@ header h1{
   /*  overflow-x: scroll; */
    overflow-wrap: break-word;
    container-type: inline-size;
-   
    aspect-ratio: 1/1;
-   
 }
 
 .drop-target>p{
@@ -247,28 +248,21 @@ header h1{
     font-size: clamp(0.8rem, 7cqi, 2rem); 
 }
 
-.subset{
-    font-size: 30px;
-    font-weight: bold;
-}
-
 .correct{
-    background-color: #30ac63;
-  
+    background-color: #53f86e
 }
 .wrong{
     background-color: #e16557;
 }
 
-/* Float window */
-
-/*
+/* Float window 
 
 #floatCont{
-    background-color: #212228; 
-    background-image: linear-gradient(#292a30 .1em, transparent .1em),
+background-color: #212228;
+background-image: linear-gradient(#292a30 .1em, transparent .1em),
     linear-gradient(90deg, #292a30 .1em, transparent .1em);
-    background-size: 4em 4em;
+
+    background-size: 4em 4em; 
     height: 100vh;
 }
  */
@@ -288,6 +282,12 @@ header h1{
     text-align: right;
 }
 
+.q1{
+    background-color: #607d5b;
+   
+    
+}
+
 /* -----------------------------------------  quiz 1.x ----------------------------  */
 
 #dragScriptContainer{	/* BIG DIV containing HTML needed for the entire script */
@@ -296,6 +296,7 @@ header h1{
     height:400px;
     margin-top:20px;
     padding:3px;
+
 }
 #questionDiv{ /* Big div for all the questions */
     float:left;
@@ -304,6 +305,7 @@ header h1{
    /* border:1px solid #000; */
     padding:2px;
     display: block;
+
 }
 #answerDiv{	/* Big div for all the answers */
     float:right;
@@ -350,7 +352,7 @@ header h1{
     border:1px dashed #000; 
 }
 #questionDiv .correctAnswer{	/* CSS indicating correct answer */
-    background-color:rgb(26, 95, 26);
+    background-color:#53f86e;
     color:#fff;
 }
 #questionDiv .wrongAnswer{	/* CSS indicating wrong answer */
@@ -363,65 +365,31 @@ header h1{
     display:none;
 }	
 
-.sideWays{
-    width: 100%;
-    /*    display: flex;
-    container-type: inline-size; */
- 
-  }
-  
-  .slideSolids1{
-      width: 100%;
-      /* border: 2px solid rgb(7, 162, 64);
-      float:left; */
-  }
-  .slideSolids2{
-    width: 100%;
-    /* border: 2px solid rgb(7, 162, 64);*/
-    float:left;
-}
-/*
 .slidePadlet1{
     display: flex;
-    width: 100%;
-}
-*/
-
-
-.slidePadlet1{
-    display: flex;
-    width: 85%;
+    width: 75%;
     gap: 10px;
-    overflow-wrap: break-word;
-    container-type: inline-size;
-}
-
-.slide1{
-    width: 30%;
-}
-
-.googlSheet1 {
-
-    width: 100%;
-    margin: 3px;
-    cursor: pointer;
-}
-
-.objective0{
-    background-color: #30ac63;
-    margin-left: 20%;
-   /* margin-right: 1.5%; */
-    text-align: left;
-    padding-left: 2%;
-    padding-top: 2%;
 }
 
 /*
+.SheetContainer{
+    background-color: yellow;
+    width: 100%;
+    display: flex;
+    float: left;
+}
+.googlSheet1{
 
+    width: 100%;
+}
+
+*/
 
 .SheetContainer{
     display: flex;
     width: 94%;
+    align-items: center;
+    /*justify-content: center; */
     gap: 10px;
     overflow-wrap: break-word;
     container-type: inline-size;
@@ -433,23 +401,25 @@ header h1{
     display: flex;
     width: 100%;
     align-items: center;
+    /*justify-content: center; */
     gap: 10px;
     overflow-wrap: break-word;
     container-type: inline-size;
 }
 .googlSheet1 {
-
+   /* height: 150px;*/
     width: 100%;
     margin: 3px;
-
+    /*border: solid 2px black;*/
     cursor: pointer;
-
+   /* background-color: #147a34;*/
+    /* border: 2px solid rgb(7, 162, 64);*/
+    float: left;
+   /* text-align: center;
+    border-radius: 30px;
+    align-items: center;
+    align-content: center; */
 }
-
-
-*/
-
-
 
 
 .lessonPlan{
@@ -469,73 +439,5 @@ th{
 tr{
     background-color: rgb(167, 238, 60);
 }
-
-
-
-.googlSheet1 {
-    /* height: 150px;*/
-     width: 100%;
-     margin: 3px;
-     /*border: solid 2px black;*/
-     cursor: pointer;
-    /* background-color: #147a34;*/
-     /* border: 2px solid rgb(7, 162, 64);*/
-     float: left;
-    /* text-align: center;
-     border-radius: 30px;
-     align-items: center;
-     align-content: center; */
- }
-
-
-.slider-container {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  margin: 40px auto;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: calc(100% * 6); /* 6 images */
-}
-
-.slider img {
-  width: 100%;
-  flex-shrink: 0;
-  object-fit: cover;
-  height: 500px;
-}
-
-.nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 24px;
-  padding: 10px 16px;
-  cursor: pointer;
-  z-index: 10;
-  border-radius: 50%;
-}
-
-.prev {
-  left: 15px;
-}
-
-.next {
-  right: 15px;
-}
-
-
-
-
-
 
 
